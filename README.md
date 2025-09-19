@@ -1,5 +1,5 @@
-# HelloWorld
+# Hello, LISP!
 
 ## Overview
 
-CommonLispってどんな感じ?
+Common LISP ってどんな感じ?
