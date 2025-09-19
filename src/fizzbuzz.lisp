@@ -1,8 +1,8 @@
 (defun fizzbuzz (x)
     (cond
-        ((= (mod x 15) 0) "FizzBuzz")
-        ((= (mod x 5) 0) "Buzz")
-        ((= (mod x 3) 0) "Fizz")
+        ((zerop (mod x 15)) "FizzBuzz")
+        ((zerop (mod x 5)) "Buzz")
+        ((zerop (mod x 3)) "Fizz")
         (t (format nil "~d" x))
     )
 )
