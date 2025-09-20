@@ -1,14 +1,13 @@
 ;; range
-;; startからendを上回らない公比stepの数列をリストとして生成する
-(defun range (start end step)
+(defun range (end &optional (start 0) (stride -1))
     (let ((list-size (- end start)))
         (labels
             ((iter (x l)
                 (if (>= x end)
                     (nreverse l)
-                    (iter (+ x step) (cons x l)))
+                    (iter (+ x stride) (cons x l)))
                 ))
 
             (iter start '()))))
 
-(print (range 2 11 2))
+(print (range 11 2 2))
